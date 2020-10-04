@@ -26,7 +26,7 @@ namespace GradeBookTests
             Assert.True(File.Exists(filePath), "`GradeBookType.cs` was not found in the `Enums` directory.");
 
             // Get GradeBookType from the GradeBook.Enums namespace
-            var gradebookEnum = TestHelpers.GetUserType("GradeBook.Enums.GradeBookType");
+            var gradebookEnum = TestHelpers.GetUserType("GradeBook.Enums.GradeBookType"); 
 
             // Assert GradeBookType was found in the GradeBook.Enums namespace
             Assert.True(gradebookEnum != null, "`GradeBookType` wasn't found in the `GradeBooks.Enums` namespace.");
